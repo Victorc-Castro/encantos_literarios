@@ -1,0 +1,101 @@
+section {
+  border: 1px solid red;
+  margin-top: 3rem;
+
+  & img.spell-book {
+    display: flex;
+    margin-left: auto;
+    margin-right: 80px;
+  }
+
+  & #description-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: var(--title-xs);
+    color: var(--text-body);
+  }
+
+  & #spell-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & img.spell-crystal {
+    margin-top: 10px;
+    rotate: 15deg;
+    margin-right: 15px;
+  }
+}
+
+@media (width >= 80em) {
+  section {
+    margin-top: 3rem;
+
+    & img.spell-book {
+      display: flex;
+      margin: auto;
+    }
+
+    & #description-items-pc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font: var(--subtitle);
+      color: var(--text-body);
+      margin-top: 1rem;
+    }
+
+    & img.spell-ouija {
+      rotate: 95deg;
+      margin-left: 80px;
+    }
+
+    & img.spell-crystal {
+      margin-top: 10px;
+      rotate: -15deg;
+      margin-right: 15px;
+    }
+  }
+
+  .spell-img {
+    width: 88px;
+    height: 88px;
+    opacity: 1;
+  }
+
+
+
+  section#description:hover img.spell-img {
+    opacity: 1;
+    transform: scale(1);
+  } 
+
+  section#description:not(:hover) img.spell-img {
+    transition-delay: 0.1s;
+  } 
+
+  & img.spell-book {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform-origin: center center;
+    transition-delay: 0.1s;
+  }
+
+  & img.spell-ouija {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform-origin: center center;
+    transition-delay: 1.1s;
+  }
+
+  & img.spell-crystal {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform-origin: center center;
+    transition-delay: 2.1s;
+  }
+}

@@ -67,6 +67,6 @@ header > p {
   header {
     background: url(../assets/img/hero-background.png) no-repeat top center/contain;
     padding-bottom: 25rem;
-    background-color: var(--shape-background);
+    /* background-color: var(--shape-background); */
   }
 } 
