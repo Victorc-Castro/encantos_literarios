@@ -142,13 +142,15 @@ img.purple-star {
     }
 
     & div.arrow-msg-2 {
-      border: 1px solid fuchsia;
+      /* border: 1px solid fuchsia; */
 
       position: absolute;
       width: 15rem;
       height: 12rem;
       bottom: 3.75rem;
       right: 2rem;
+
+      /* z-index: -1; */
 
       & img {
         margin-left: 4.3rem;
@@ -213,7 +215,7 @@ img.purple-star {
     0% {
 
     }50% {
-      transform: translateY(calc(-100px - 1px)) translateX(calc(100px - 1px)) rotate(11deg);
+      transform: translateY(calc(-100px - 2px)) translateX(calc(100px + 2px)) rotate(11deg);
     }60% {
       transform: translateY(-99px) translateX(99px) rotate(11deg);
     }100% {
@@ -225,7 +227,7 @@ img.purple-star {
     0% {
       color: aqua;
     }50% {
-      transform: translateX(calc(210px - 1px)) rotate(21deg);
+      transform: translateX(calc(210px + 2px)) rotate(21deg);
     }60% {
       transform: translateX(209px) rotate(21deg);
     }100% {
@@ -237,15 +239,15 @@ img.purple-star {
     0% {
       transform: translateY(0px);
     }80% {
-      transform: translateY(calc(155px - 1px)) translateX(calc(-298px - 1px));
+      transform: translateY(calc(198px + 2px)) translateX(calc(180px + 2px));
     }90% {
-      transform: translateY(154.5px) translateX(-297.5px);
+      transform: translateY(198px.5px) translateX(180px.5px);
     }95% {
-      transform: translateY(154.6px) translateX(-297.6px);
+      transform: translateY(198px.6px) translateX(180px.6px);
     }98% {
-     transform: translateY(154.7px) translateX(-297.7px);
+     transform: translateY(198px.7px) translateX(180.7px);
     }100% {
-      transform: translateY(155px) translateX(298px);
+      transform: translateY(198px) translateX(180px);
     }
   }
 }
