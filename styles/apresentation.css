@@ -142,7 +142,7 @@ img.purple-star {
     }
 
     & div.arrow-msg-2 {
-      /* border: 1px solid fuchsia; */
+      border: 1px solid fuchsia;
 
       position: absolute;
       width: 15rem;
@@ -164,6 +164,21 @@ img.purple-star {
         padding-right: 1.875rem;
       }
     }
+
+    & div.brooch {
+      border: 1px solid skyblue;
+      position: absolute;
+      bottom: 0.75rem;
+      left: 4rem;
+
+      /* z-index: -1; */
+
+
+       & img {
+        width: 13.875rem;
+        height: 15.875rem;
+      }
+    }
   }
 
   div.apresentation-book:hover .arrow-msg {
@@ -182,8 +197,8 @@ img.purple-star {
     animation: arrow-msg-2 1.5s forwards;
   }
 
-  div.apresentation-book:not(:hover) .arrow-msg {
-    animation: hide-msg linear forwards;
+  div.apresentation-book:hover .brooch {
+    animation: brooch 1.5s forwards;
   }
 
 
@@ -191,23 +206,15 @@ img.purple-star {
     0% {
       transform: translateY(0px);
     }80% {
-      transform: translateY(calc(-155px - 1px)) translateX(calc(-298px - 1px));
+      transform: translateY(calc(-9.6875rem - 1px)) translateX(calc(-18.625rem - 1px));
     }90% {
-      transform: translateY(-154.5px) translateX(-297.5px);
+      transform: translateY(-9.65625rem) translateX(-18.59375rem);
     }95% {
-      transform: translateY(-154.6px) translateX(-297.6px);
+      transform: translateY(-9.6625rem) translateX(-18.6rem);
     }98% {
-     transform: translateY(-154.7px) translateX(-297.7px);
+     transform: translateY(-9.66875rem) translateX(-18.60625rem);
     }100% {
-      transform: translateY(-155px) translateX(-298px);
-    }
-  }
-
-  @keyframes hide-msg {
-    0% {
-      transform: translateY(-50px) translateX(-120px);
-    }100% {
-      transform: translateY(0px);
+      transform: translateY(-9.6875rem) translateX(-18.625rem);
     }
   }
 
@@ -241,13 +248,25 @@ img.purple-star {
     }80% {
       transform: translateY(calc(198px + 2px)) translateX(calc(180px + 2px));
     }90% {
-      transform: translateY(198px.5px) translateX(180px.5px);
+      transform: translateY(198.5px) translateX(180.5px);
     }95% {
-      transform: translateY(198px.6px) translateX(180px.6px);
+      transform: translateY(198.6px) translateX(180.6px);
     }98% {
-     transform: translateY(198px.7px) translateX(180.7px);
+     transform: translateY(198.7px) translateX(180.7px);
     }100% {
       transform: translateY(198px) translateX(180px);
+    }
+  }
+
+  @keyframes brooch {
+    0% {
+
+    }50% {
+      transform: translateY(calc(110px + 1px)) translateX(calc(-190px - 2px)) rotate(-9deg);
+    }60% {
+      transform: translateY(109px) translateX(-189px) rotate(-9deg);
+    }100% {
+      transform: translateY(110px) translateX(-190px) rotate(-9deg);
     }
   }
 }
