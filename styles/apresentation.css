@@ -222,23 +222,23 @@ img.purple-star {
     0% {
 
     }50% {
-      transform: translateY(calc(-100px - 2px)) translateX(calc(100px + 2px)) rotate(11deg);
+      transform: translateY(calc(-6.25rem - 2px)) translateX(calc(6.25rem + 2px)) rotate(11deg);
     }60% {
-      transform: translateY(-99px) translateX(99px) rotate(11deg);
+      transform: translateY(-6.1875rem) translateX(6.1875rem) rotate(11deg);
     }100% {
-      transform: translateY(-100px) translateX(100px) rotate(11deg);
+      transform: translateY(-6.25rem) translateX(6.25rem) rotate(11deg);
     }
   }
 
   @keyframes mark-p {
     0% {
-      color: aqua;
+
     }50% {
-      transform: translateX(calc(210px + 2px)) rotate(21deg);
+      transform: translateX(calc(13.125rem + 2px)) rotate(21deg);
     }60% {
-      transform: translateX(209px) rotate(21deg);
+      transform: translateX(13.0625rem) rotate(21deg);
     }100% {
-      transform: translateX(210px) rotate(21deg);
+      transform: translateX(13.125rem) rotate(21deg);
     }
   }
 
@@ -246,15 +246,15 @@ img.purple-star {
     0% {
       transform: translateY(0px);
     }80% {
-      transform: translateY(calc(198px + 2px)) translateX(calc(180px + 2px));
+      transform: translateY(calc(12.375rem + 2px)) translateX(calc(11.25rem + 2px));
     }90% {
-      transform: translateY(198.5px) translateX(180.5px);
+      transform: translateY(12.40625rem) translateX(11.28125rem);
     }95% {
-      transform: translateY(198.6px) translateX(180.6px);
+      transform: translateY(12.4125rem) translateX(11.2875rem);
     }98% {
-     transform: translateY(198.7px) translateX(180.7px);
+     transform: translateY(12.41875rem) translateX(11.29375rem);
     }100% {
-      transform: translateY(198px) translateX(180px);
+      transform: translateY(12.375rem) translateX(11.25rem);
     }
   }
 
@@ -262,11 +262,11 @@ img.purple-star {
     0% {
 
     }50% {
-      transform: translateY(calc(110px + 1px)) translateX(calc(-190px - 2px)) rotate(-9deg);
+      transform: translateY(calc(6.875rem + 1px)) translateX(calc(-11.875rem - 2px)) rotate(-9deg);
     }60% {
-      transform: translateY(109px) translateX(-189px) rotate(-9deg);
+      transform: translateY(6.8125rem) translateX(-189px) rotate(-9deg);
     }100% {
-      transform: translateY(110px) translateX(-190px) rotate(-9deg);
+      transform: translateY(6.875rem) translateX(-11.875rem) rotate(-9deg);
     }
   }
 }
