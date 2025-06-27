@@ -34,6 +34,15 @@ img.purple-star {
   }
 }
 
+div.apresentation-book {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  
+  
+  border: 1px solid red;
+}
+
 @media (width >= 80em) {
   div.apresentation-msg {
     margin-top: 6rem;
@@ -52,4 +61,20 @@ img.purple-star {
     font: var(--body-md);
     color: var(--text-body);
   }
+
+  .purple-star {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  div.apresentation-book {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+  } 
+
+  .book-img {
+    width: 29.1875rem;
+    height: 38.5625rem;
+  } 
 }

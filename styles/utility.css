@@ -17,8 +17,8 @@
 }
 
 .spell-img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   opacity: 0;
 }
 
@@ -39,9 +39,15 @@
 }
 
 .purple-star  {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
+
+.book-img {
+  width: 9.824375rem;
+  height: 12.98rem;
+}
+
 
 @media (width >= 80em) {
   .container {
