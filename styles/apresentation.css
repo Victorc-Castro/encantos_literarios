@@ -142,7 +142,7 @@ img.purple-star {
     }
 
     & div.arrow-msg-2 {
-     border: 1px solid fuchsia;
+      border: 1px solid fuchsia;
 
       position: absolute;
       width: 15rem;
@@ -155,12 +155,11 @@ img.purple-star {
         margin-bottom: 0.25rem;
       }
 
-        & p {
-          font: var(--body-xs);
-          font-size: 0.8125rem;
-          color: var(--text-body);
-          padding-right: 1.875rem;
-        }
+      & p {
+        font: var(--body-xs);
+        font-size: 0.8125rem;
+        color: var(--text-body);
+        padding-right: 1.875rem;
       }
     }
   }
