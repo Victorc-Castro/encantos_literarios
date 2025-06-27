@@ -1,0 +1,55 @@
+div.apresentation-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 8px;
+
+  & h2 {
+    font: var(--ff-base);
+    font: var(--title-xs);
+    color: var(--text-body);
+    font-size: 1.5rem;
+  }
+}
+
+section#apresentation > p {
+  display: flex;
+  justify-content: center;
+  font: var(--body-xs);
+  color: var(--text-body);
+}
+
+img.purple-star {
+  animation: star-bright 1s forwards;
+}
+
+@keyframes star-bright {
+  to {
+    filter: drop-shadow(0 0 0px var(--pink-base));
+  }
+
+  to {
+    filter: drop-shadow(0 0 8px var(--pink-base));
+  }
+}
+
+@media (width >= 80em) {
+  div.apresentation-msg {
+    margin-top: 6rem;
+    gap: 12px;
+
+    border: 1px solid red;
+
+    & h2 {
+      font: var(--subtitle);
+      color: var(--text-body);
+      font-size: 2rem;
+    }
+  } 
+
+  section#apresentation > p {
+    font: var(--body-md);
+    color: var(--text-body);
+  }
+}
