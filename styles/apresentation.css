@@ -1,8 +1,3 @@
-section#apresentation {
-  margin-bottom: 50rem;
-}
-
-
 div.apresentation-msg {
   display: flex;
   justify-content: center;
@@ -36,6 +31,229 @@ img.purple-star {
 
   to {
     filter: drop-shadow(0 0 8px var(--pink-base));
+  }
+}
+
+@media (width < 80em) {
+  .apresentation-book {
+    margin-right: 1.3rem;
+  }
+
+  div.apresentation-book {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    position: relative;
+
+    & div.arrow-msg {
+      position: absolute;
+      top: 3rem;
+      width: 5rem;
+      height: 2rem;
+
+      z-index: -1;
+
+      & p {
+        font: var(--body-xs);
+        font-size: 0.30rem;
+        color: var(--text-body);
+      }
+  
+      & img.arrow-img {
+        width: 3.6rem;
+        height: 0.625rem;
+        margin-left: 0.75rem;
+        margin-top: 0.4rem;
+      } 
+    }
+
+    & div.brandPage-1 {
+      position: absolute;
+      right: 4.5rem;
+      bottom: 1px;
+
+      z-index: -1;
+
+      & img {
+        width: 4.5rem;
+        height: 14rem;
+      }
+    }
+
+    & div.brandPage-2 {
+      position: absolute;
+      right: 4.5rem;
+      bottom: 1px;
+
+      z-index: -2;
+
+      & img {
+        width: 4.5rem;
+        height: 14rem;
+      }
+    }
+
+    & div.arrow-msg-2 {
+      position: absolute;
+      bottom: 2rem;
+      width: 5rem;
+      right: 5rem;
+      height: 4rem;
+
+      z-index: -1;
+
+      & p {
+        font: var(--body-xs);
+        font-size: 0.30rem;
+        color: var(--text-body);
+      }
+  
+      & img {
+        width: 3.6rem;
+        height: 2.5rem;
+        margin-left: 1rem;
+        margin-top: 0.4rem;
+      } 
+    }
+
+    & div.brooch {
+      position: absolute;
+      bottom: 0.75rem;
+      left: 5.5rem;
+
+      z-index: -1;
+
+      & img {
+        width: 4rem;
+        height: 4.7rem;
+      }
+    }
+
+    & div.arrow-msg-3 {
+      position: absolute;
+      bottom: 2rem;
+      width: 5rem;
+      left: 7rem;
+      height: 3.5rem;
+
+      z-index: -1;
+
+      & p {
+        font: var(--body-xs);
+        font-size: 0.30rem;
+        color: var(--text-body);
+        margin-left: 0.40rem;
+      }
+  
+      & img {
+        width: 3.6rem;
+        height: 2.5rem;
+        margin-right: 2.5rem;
+        margin-top: 0.4rem;
+      } 
+    }
+  }
+
+  div.apresentation-book .arrow-msg {
+    view-timeline-name: --arrow-msg;
+    view-timeline-axis: block;
+
+    animation-name: arrow-msg;
+    animation-timeline: --arrow-msg;
+
+    animation-range: entry 10% cover 60%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes arrow-msg {
+    to {
+      transform: translateY(-4rem) translateX(-6.8rem);
+    }
+  }
+
+  div.apresentation-book .brandPage-1 {
+    view-timeline-name: --brandPage-1;
+    view-timeline-axis: block;
+
+    animation-name: mark-y;
+    animation-timeline: --brandPage-1;
+
+    animation-range: entry 10% cover 60%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes mark-y {
+    to {
+      transform: translateY(-2.7rem) translateX(3rem) rotate(11deg);
+    }
+  }
+
+  div.apresentation-book .brandPage-2 {
+    view-timeline-name: --brandPage-2;
+    view-timeline-axis: block;
+
+    animation-name: mark-p;
+    animation-timeline: --brandPage-2;
+
+    animation-range: entry 10% cover 60%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes mark-p {
+    to {
+      transform: translateY(-0.3rem) translateX(5.6rem) rotate(21deg);
+    }
+  }
+
+  div.apresentation-book .arrow-msg-2 {
+    view-timeline-name: --arrow-msg-2;
+    view-timeline-axis: block;
+
+    animation-name: arrow-msg-2;
+    animation-timeline: --arrow-msg-2;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes arrow-msg-2 {
+    to {
+      transform: translateY(4.4rem) translateX(5.1rem);
+    }
+  }
+
+  div.apresentation-book .brooch {
+    view-timeline-name: --brooch;
+    view-timeline-axis: block;
+
+    animation-name: brooch;
+    animation-timeline: --brooch;
+
+    animation-range: entry 10% cover 40%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes brooch {
+    to {
+      transform: translateY(2.5rem) translateX(-3rem) rotate(-9deg);
+    }
+  }
+
+  div.apresentation-book .arrow-msg-3 {
+    view-timeline-name: --arrow-msg-3;
+    view-timeline-axis: block;
+
+    animation-name: arrow-msg-3;
+    animation-timeline: --arrow-msg-3;
+
+    animation-range: entry 10% cover 40%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes arrow-msg-3 {
+    to {
+      transform: translateX(-6.3rem) translateY(-0.3rem);
+    }
   }
 }
 
