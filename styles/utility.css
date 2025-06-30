@@ -48,6 +48,39 @@
   height: 15rem;
 }
 
+.purple-stars {
+  width: 1rem;
+  height: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap {
+  gap: 16px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.top {
+  margin-top: 5.5rem !important;
+}
+
+.blue {
+  color: var(--blue-light) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue-dark) !important;
+}
+
 @media (width >= 80em) {
   .container {
     --max-width: 1280px;

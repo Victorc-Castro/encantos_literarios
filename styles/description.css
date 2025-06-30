@@ -162,6 +162,7 @@ section {
       font: var(--subtitle);
       color: var(--text-body);
       margin-top: 1rem;
+      font-weight: 700;
     }
 
     & img.spell-ouija {
