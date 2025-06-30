@@ -73,12 +73,26 @@
   margin-top: 5.5rem !important;
 }
 
+.bottom {
+  margin-bottom: 5.5rem;
+}
+
 .blue {
   color: var(--blue-light) !important;
 }
 
 .bg-blue {
   background-color: var(--blue-dark) !important;
+}
+
+@media (width < 80em) {
+  .right {
+    margin-right: 1.9rem;
+  }
+
+  .left {
+  margin-left: 1.6rem;
+}
 }
 
 @media (width >= 80em) {
