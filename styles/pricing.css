@@ -128,9 +128,7 @@ section#pricing {
     width: 1000px;
     height: 500px;
     position: relative;
-    margin-top: 5rem;
-
-    border: 1px solid salmon;
+    margin-top: 6rem;
 
     & .pricing-box {
       width: 288px;
@@ -146,24 +144,50 @@ section#pricing {
     & #box-1 {
       position: absolute;
 
-      z-index: -1;
+      &#box-1:hover {
+        background-color: var(--shape-hover);
+        filter: drop-shadow(0 0 20px var(--shape-hover));
+        z-index: 3;
+        scale: 1.01;
+      }
+
+      &#box-1:hover img[src*="little-star-1"] {
+        transform: rotate(-15deg);
+      }
+
+      &#box-1:hover img[src*="little-star-2"] {
+        transform: rotate(15deg);
+      }
 
       & img[src*="little-star-1"] {
         position: absolute;
         top: -20px;
         left: -40px;
+        transform: rotate(0deg);
+        transition: transform 1s ease;
       }
 
       & img[src*="little-star-2"] {
         position: absolute;
         top: 20px;
         left: -50px;
+        transform: rotate(0deg);
+        transition: transform 1s ease;
       }
     } 
 
     & #box-2 {
       position: absolute;
-      position: relative; 
+      position: relative;
+
+      z-index: 2;
+
+      &#box-2:hover {
+        background-color: var(--shape-hover);
+        filter: drop-shadow(0 0 20px var(--shape-hover));
+        z-index: 3;
+        scale: 1.01;
+      }
 
       & img[src*="habbit"] {
         position: absolute;
@@ -176,23 +200,41 @@ section#pricing {
     & #box-3 {
       position: absolute;
 
-      z-index: -1;
+      &#box-3:hover {
+        background-color: var(--shape-hover);
+        filter: drop-shadow(0 0 20px var(--shape-hover));
+        z-index: 3;
+        scale: 1.01;
+      }
+
+      &#box-3:hover img[src*="little-star-1"] {
+        transform: rotate(15deg);
+      }
+
+      &#box-3:hover img[src*="little-star-2"] {
+        transform: rotate(-15deg);
+      }
 
       & img[src*="little-star-1"] {
         position: absolute;
         bottom: -20px;
         right: -40px;
+        transform: rotate(0deg);
+        transition: transform 1s ease;
       }
 
       & img[src*="little-star-2"] {
         position: absolute;
         bottom: -25px;
         right: 0px;
+        transform: rotate(0deg);
+        transition: transform 1s ease;
       }
-    } 
+    }
 
     &#desktop-pricing:hover #box-2 {
       animation: price-1 1.5s both;
+      /* animation: price-bright 1s both; */
     }
 
     &#desktop-pricing:not(:hover) #box-2 {
@@ -236,7 +278,7 @@ section#pricing {
 
   @keyframes price-2 {
     100% {
-      transform: translateY(1rem) translateX(-18rem) rotate(-6deg);
+      transform: translateY(1rem) translateX(-18rem) rotate(-6deg) scale(1);
     }
   }
 
@@ -255,6 +297,16 @@ section#pricing {
   @keyframes price-3-back {
     0% {
       transform: translateY(1rem) translateX(18rem) rotate(6deg);
+    }
+  }
+
+  @keyframes price-bright {
+    to {
+      filter: drop-shadow(0 0 0px var(--shape-hover));
+    }
+
+    to {
+      filter: drop-shadow(0 0 50px var(--shape-hover));
     }
   }
 }
