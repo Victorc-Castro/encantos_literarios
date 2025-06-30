@@ -67,6 +67,31 @@ header > p {
   header {
     background: url(../assets/img/hero-background.png) no-repeat top center/contain;
     padding-bottom: 25rem;
-    /* background-color: var(--shape-background); */
+  }
+
+  header > div {
+    & a {
+      position: relative;
+      width: fit-content;
+    }
+
+    & a:hover::after {
+      transform: scale(1);
+    }
+
+    & a::after {
+      content: "";
+      width: 101%;
+      height: 101%;
+      border-radius: 0.75rem;
+      background-color: var(--text-title);
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      transform: scale(0);
+      transition: transform 300ms linear;
+    }
   }
 } 
