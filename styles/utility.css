@@ -46,6 +46,8 @@
 .book-img {
   width: 12rem;
   height: 15rem;
+
+  z-index: 3;
 }
 
 .purple-stars {

@@ -1,3 +1,8 @@
+.bg-all-4 {
+  background: linear-gradient(to bottom, var(--shape-base)0%, var(--shape-background) 50%);
+  padding-top: 1px;
+}
+
 footer {
   background: url(../assets/img/book-trace-background.png) no-repeat top center/cover;
   margin-top: 7rem;

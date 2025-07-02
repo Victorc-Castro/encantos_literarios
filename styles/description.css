@@ -1,3 +1,7 @@
+.bg-all-1 {
+  background: linear-gradient(to bottom, var(--pink-bg) 60%, var(--shape-background) 100%);
+}
+
 section {
   margin-top: 3rem;
   

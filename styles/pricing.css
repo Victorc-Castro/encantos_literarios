@@ -1,4 +1,10 @@
+.bg-all-3 {
+  background: linear-gradient(to bottom, var(--shape-background) 10%, var(--shape-base)80%, var(--shape-base)100%);
+  padding-top: 1px;
+}
+
 section#pricing {
+  background: url(../assets/img/pricing-background.png) no-repeat top center/cover;
   & h2 {
     font: var(--ff-base);
     font: var(--title-xs);
