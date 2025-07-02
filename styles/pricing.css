@@ -1,6 +1,4 @@
 section#pricing {
-  margin-bottom: 30rem;
-
   & h2 {
     font: var(--ff-base);
     font: var(--title-xs);
@@ -234,7 +232,6 @@ section#pricing {
 
     &#desktop-pricing:hover #box-2 {
       animation: price-1 1.5s both;
-      /* animation: price-bright 1s both; */
     }
 
     &#desktop-pricing:not(:hover) #box-2 {
@@ -292,7 +289,7 @@ section#pricing {
     }
   }
 
-   @keyframes price-1-back {
+  @keyframes price-1-back {
     from {
       transform: translateY(-2rem);
     }
