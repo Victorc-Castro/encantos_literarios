@@ -1,0 +1,140 @@
+footer {
+  background: url(../assets/img/book-trace-background.png) no-repeat top center/cover;
+  margin-top: 7rem;
+  padding-top: 6rem;
+}
+
+footer {
+  & .logo {
+    display: grid;
+    justify-content: center;
+
+    & img {
+      width: 158.62px;
+      height: 40px;
+    }
+  }
+
+  & hr.lol {
+    margin: auto;
+    width: 311px;
+    height: 1px;
+    border: none;
+    background-color: var(--shape-stroke);
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  & div.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  & div.help-info {
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  & div.help-info div:nth-child(1) {
+    & h1 {
+      font: var(--title-xs);
+      color: var(--text-body);
+    }
+
+    & a {
+      display: flex;
+      font: var(--body-xs);
+      color: var(--blue-light);
+      margin-top: 0.75rem;
+    }
+  }
+
+  & div.help-info div:nth-child(2) {
+    & h1 {
+      font: var(--title-xs);
+      color: var(--text-body);
+    }
+
+    & a {
+      display: flex;
+      font: var(--body-xs);
+      color: var(--blue-light);
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+@media (width >= 80em) {
+  & footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    padding-top: 3rem;
+    padding-inline: 15rem;
+
+    & div.help-info div:nth-child(1) {
+      & h1 {
+        font: var(--title-xs);
+        color: var(--text-body);
+      }
+
+      & a {
+        display: flex;
+        font: var(--body-xs);
+        color: var(--blue-light);
+        margin-top: 0.75rem;
+      }
+    }
+
+    & div.help-info div:nth-child(2) {
+      & h1 {
+        font: var(--title-xs);
+        color: var(--text-body);
+      }
+
+      & a {
+        display: flex;
+        font: var(--body-xs);
+        color: var(--blue-light);
+        margin-top: 0.75rem;
+      }
+    }
+    
+    & .help-hover a:hover {
+      color: var(--text-body) !important;
+    }
+  }
+
+  & footer .social-media a {
+    position: relative;
+    z-index: 1;
+  }
+
+  & .social-media a:hover::after {
+    transform: scale(1);
+  }
+
+  & .social-media a::after {
+    content: "";
+    width: 150%;
+    height: 150%;
+    border-radius: 47%;
+    background-color: var(--shape-stroke);
+    z-index: -1;
+    
+
+
+
+    top: -29%;
+    right: -21%; 
+    position: absolute;
+
+    transform: scale(0);
+    transition: transform 300ms linear;
+  }
+}

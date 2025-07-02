@@ -69,6 +69,11 @@
   gap: 8px;
 }
 
+.gap-24 {
+  gap: 24px;
+}
+
+
 .top {
   margin-top: 5.5rem !important;
 }
